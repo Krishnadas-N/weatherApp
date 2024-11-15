@@ -1,0 +1,87 @@
+.weatherDiv {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .weather-dashboard {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .temperature h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #007BFF;
+  }
+  
+  .details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .additional-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .info-box h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer span {
+    color: #007BFF;
+  }
+  

@@ -1,0 +1,45 @@
+<div class="weatherDiv">
+   <div class="weather-dashboard" >
+      <div class="header">
+        <h1>Weather in <span>{{ weatherData.name }}</span></h1>
+        <p>{{ weatherData.weather[0].main }}</p>
+      </div>
+    
+      <div class="main-info">
+        <div class="temperature">
+          <h2>{{ weatherData.main.temp }}°C</h2>
+          <p>{{ weatherData.weather[0].description }}</p>
+        </div>
+        <div class="details">
+          <p><strong>Feels Like:</strong> {{ weatherData.main.feels_like }}°C</p>
+          <p><strong>Min Temp:</strong> {{ weatherData.main.temp_min }}°C</p>
+          <p><strong>Max Temp:</strong> {{ weatherData.main.temp_max }}°C</p>
+          <p><strong>Pressure:</strong> {{ weatherData.main.pressure }} hPa</p>
+          <p><strong>Humidity:</strong> {{ weatherData.main.humidity }}%</p>
+        </div>
+      </div>
+    
+      <div class="additional-info">
+        <div class="info-box">
+          <h3>Wind</h3>
+          <p><strong>Speed:</strong> {{ weatherData.wind.speed }} km/h</p>
+          <p><strong>Direction:</strong> {{ weatherData.wind.deg }}°</p>
+          <p><strong>Gust:</strong> {{ weatherData.wind.gust || 'N/A' }} km/h</p>
+        </div>
+        <div class="info-box">
+          <h3>Clouds</h3>
+          <p><strong>Cloudiness:</strong> {{ weatherData.clouds.all }}%</p>
+        </div>
+        <div class="info-box">
+          <h3>Rain</h3>
+          <p><strong>1 Hour:</strong> {{ getRainfall() }}</p>
+        </div>
+      </div>
+    
+      <footer>
+        <p><strong>Sunrise:</strong> {{ convertToTime(weatherData.sys.sunrise) }}</p>
+        <p><strong>Sunset:</strong> {{ convertToTime(weatherData.sys.sunset) }}</p>
+      </footer>
+    </div>
+    
+</div>
